@@ -1,0 +1,119 @@
+
+body {display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 100;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+span{color: white;}
+form{display: flex;
+    border: solid 1px white;
+    flex-direction: column;
+padding: 50px;
+padding-bottom: 90px;
+border-radius: 10%;
+position: relative;
+backdrop-filter: blur(15px);
+top: 15%;}
+form input {
+  width:250px;
+  padding: 20px ;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+input::placeholder{
+  color: white;
+}
+
+form input:focus {
+  border-color: #104F55;
+  outline: none; /* Remove a borda padrão do foco para melhorar a aparência */
+}
+
+
+div#ec{
+  display: flex;
+  gap: 50px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+a{
+  color: white;
+}
+button{
+  position: absolute;
+  border: 2px solid white;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  width: 250px;
+  height: 50px;
+  font-size: 2em;
+  border-radius: 5px;
+  opacity: .5;
+  top: 45vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+  
+}
+
+button:hover{
+  border: 2px solid #104F55;
+  background-color: rgba(365,365,365,0.5);
+  cursor: pointer;
+  color: #104F55;
+  opacity: .8;
+  transition: .3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+
+@keyframes animate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+  /* your existing button styles */
+  @media screen and (max-width: 768px) {
+    button {
+        width: 200px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+    form{
+      border: none;
+      
+    }
+
+    /* Add more responsive styles for small screens as needed */
+}
+
+/* Responsive styles for large screens */
+@media screen and (max-width: 360px) {
+  form{
+    
+    width: 100vw;
+    height: 100vh;
+  }
+    /* Add styles for large screens */
+}
